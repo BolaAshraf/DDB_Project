@@ -13,7 +13,23 @@ Design and implement a basic distributed database system using the Go programmin
 * Communication between nodes using TCP.
 
 ## 🛠 Architecture
-
+                +-------------------------+
+                |      Master Node        |
+                |------------------------ |
+                | - DB Write Access       |
+                | - Broadcast to Slave    |
+                +-------------------------+
+                            |
+                            v
+            -----------------------------------
+           |                                   |
+           v                                   v
++-------------------------+     +-------------------------+
+|     Slave Node 1        |     |     Slave Node 2        |
+|-------------------------|     |-------------------------|
+| - Read-only DB          |     | - Read-only DB          |
+| - Listen for Replication|     | - Listen for Replication|
++-------------------------+     +-------------------------+
 1. Master Node:
 
    * Manages the creation of databases and tables.
