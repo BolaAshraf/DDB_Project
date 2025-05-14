@@ -13,17 +13,14 @@ Design and implement a basic distributed database system using the Go programmin
 * Communication between nodes using TCP.
 
 ## 🛠 Architecture
-                +-------------------------+
-                |      Master Node        |
-                |------------------------ |
-                | - DB Write Access       |
-                | - Broadcast to Slave    |
-                +-------------------------+
-                            |
-                            v
-            -----------------------------------
-           |                                   |
-           v                                   v
++-------------------------+
+|      Master Node       |
+|------------------------|
+| - DB Write Access      |
+| - Broadcast to Slave   |
++-------------------------+
+            |
+            v
 +-------------------------+     +-------------------------+
 |     Slave Node 1        |     |     Slave Node 2        |
 |-------------------------|     |-------------------------|
