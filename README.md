@@ -13,7 +13,6 @@ Design and implement a basic distributed database system using the Go programmin
 * Communication between nodes using TCP.
 
 ## 🛠 Architecture
-## 🛠 Architecture
 
 ```
                  +-------------------------+
