@@ -24,13 +24,6 @@ func main() {
 
 	// Start TCP server to listen for replication
 	go network.StartTCPServer("8080", func(msg network.Message) {
-		err = network.SendTCPMessage(masterIP, "8080", network.Message{
-			Type:     "REGISTER",
-			SenderIP: slaveIP,
-		})
-		if err != nil {
-			log.Printf("Failed to register with master: %v\n", err)
-		}
 		switch msg.Type {
 		case "REPLICATION":
 			log.Printf("Executing replicated query from %s: %s\n", msg.SenderIP, msg.Query)
@@ -101,30 +94,22 @@ func selectAll(query string, db *db.Database) bool {
 	if !strings.HasPrefix(query, "SELECT") {
 		return false
 	}
-	// فتح قاعدة البيانات المحلية
 
-	//defer db.Close()
-
-	// تنفيذ الاستعلام
 	rows, err := db.Query(query)
 	if err != nil {
 		log.Fatal("❌ Error executing query:", err)
 	}
 	defer rows.Close()
 
-	// الحصول على أسماء الأعمدة
 	columns, err := rows.Columns()
 	if err != nil {
 		log.Fatal("❌ Error getting columns:", err)
 	}
 
-	// طباعة أسماء الأعمدة
 	fmt.Println("📃 Query Result:")
 	fmt.Println(strings.Join(columns, " | "))
 
-	// معالجة الصفوف وطباعة البيانات
 	for rows.Next() {
-		// تجهيز مصفوفة لحفظ القيم
 		values := make([]interface{}, len(columns))
 		valuePtrs := make([]interface{}, len(columns))
 
@@ -132,12 +117,9 @@ func selectAll(query string, db *db.Database) bool {
 			valuePtrs[i] = &values[i]
 		}
 
-		// قراءة الصف
 		if err := rows.Scan(valuePtrs...); err != nil {
 			log.Fatal("❌ Error scanning row:", err)
 		}
-
-		// طباعة الصف
 		for _, val := range values {
 			if b, ok := val.([]byte); ok {
 				fmt.Printf("%s\t", string(b))
