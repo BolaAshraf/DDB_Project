@@ -31,7 +31,7 @@ Design and implement a basic distributed database system using the Go programmin
 1. Clone the repository:
 
    
-   git clone https://github.com/BolAshraf/DDB_Project.git
+   git clone https://github.com/BolAshraf/DDB_Project
    cd distributed-mysql
    
 
